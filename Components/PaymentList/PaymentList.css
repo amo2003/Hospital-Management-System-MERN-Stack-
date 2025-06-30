@@ -1,0 +1,133 @@
+/* Unique Navbar for PaymentList page only */
+.payment-navbar {
+  background: linear-gradient(90deg, #004bae, #002b87);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-navbar .logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.payment-navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.payment-navbar .nav-links a:hover {
+  color: #f1f1f1;
+}
+
+/* Container */
+.payment-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-container h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #004093;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.payment-container h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #00c161;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #eef4ff;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Action Buttons */
+button {
+  margin: 2px 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:nth-child(1) {
+  background-color: #005423;
+  color: #fff;
+}
+
+button:nth-child(2) {
+  background-color: #b60000;
+  color: #fff;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 2px solid #147aff;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #002b4e;
+  box-shadow: 0 0 5px rgba(0, 193, 97, 0.3);
+}

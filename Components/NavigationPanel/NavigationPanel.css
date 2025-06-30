@@ -1,0 +1,62 @@
+.np-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #f4f9ff, #ffffff);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.np-container h2 {
+  font-size: 26px;
+  margin: 20px 0 10px;
+  color: #1f4e79;
+}
+
+.np-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.np-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.np-buttons button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  background-color: #1f4e79;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.np-buttons button:hover {
+  background-color: #15517a;
+  transform: scale(1.05);
+}
+
+.np-container svg {
+  vertical-align: middle;
+  margin-bottom: -4px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}

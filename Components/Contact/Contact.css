@@ -1,0 +1,204 @@
+/* Contact.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  --color-bg: #f9fbfc;
+  --color-primary: #2c3e50; /* deep blue-gray */
+  --color-secondary: #34495e; /* softer dark */
+  --color-accent: #2980b9; /* calm blue */
+  --color-text: #2c3e50;
+  --color-text-muted: #7f8c8d;
+  --color-input-bg: #ffffff;
+  --color-input-border: #d1d8e0;
+  --color-input-focus: #2980b9;
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-focus: rgba(41, 128, 185, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-page {
+  max-width: 850px;
+  margin: 3rem auto 4rem;
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px var(--shadow-light);
+}
+
+.info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-card {
+  max-width: 300px;
+  background: var(--color-input-bg);
+  border-radius: 12px;
+  padding: 1.8rem 1.6rem;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  border: 1px solid var(--color-input-border);
+  color: var(--color-primary);
+  user-select: none;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-card h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.info-card p {
+  margin: 0.6rem 0;
+  color: var(--color-secondary);
+}
+
+.info-card:hover {
+  box-shadow: 0 6px 14px var(--shadow-focus);
+}
+
+.contact-wrapper {
+  background: var(--color-input-bg);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 6px 16px var(--shadow-light);
+  border: 1px solid var(--color-input-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hospital-header h1 {
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.hospital-subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  color: var(--color-text-muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  user-select: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background: var(--color-input-bg);
+  border: 1.5px solid var(--color-input-border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  outline-offset: 2px;
+  resize: vertical;
+  min-height: 38px;
+}
+
+.contact-form textarea {
+  min-height: 110px;
+  line-height: 1.4;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-input-focus);
+  box-shadow: 0 0 8px var(--color-input-focus);
+  outline: none;
+}
+
+.contact-form input[readonly],
+.contact-form input:disabled,
+.contact-form textarea:disabled {
+  cursor: not-allowed;
+  background: #f0f2f5;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.contact-form input[type="submit"] {
+  cursor: pointer;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  background: var(--color-accent);
+  box-shadow: 0 6px 16px rgba(41, 128, 185, 0.6);
+  transition: background 0.3s ease, transform 0.18s ease;
+  align-self: flex-start;
+  user-select: none;
+}
+
+.contact-form input[type="submit"]:hover {
+  background: #217dbb;
+  transform: scale(1.05);
+  box-shadow: 0 10px 28px rgba(33, 125, 187, 0.8);
+}
+
+@media (max-width: 700px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  .info-card-container {
+    margin-bottom: 1.8rem;
+    justify-content: center;
+  }
+
+  .info-card {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-wrapper {
+    padding: 1.8rem 2rem;
+    border-radius: 12px;
+  }
+
+  .hospital-header h1 {
+    font-size: 1.6rem;
+  }
+}

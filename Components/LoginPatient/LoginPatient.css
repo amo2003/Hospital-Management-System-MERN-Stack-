@@ -1,0 +1,201 @@
+/* Hospital Management System Login Page Styles */
+.hms-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hms-login-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 87, 184, 0.1);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hms-login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.hms-brand-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hms-brand-icon {
+    font-size: 42px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.hms-brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0056b3;
+    margin: 5px 0;
+    letter-spacing: 0.5px;
+}
+
+.hms-brand-subtitle {
+    color: #6c757d;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.hms-login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    color: #212529;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hms-login-icon {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.hms-error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hms-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hms-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hms-form-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.hms-form-input {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.hms-form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    background-color: white;
+}
+
+.hms-form-input::placeholder {
+    color: #adb5bd;
+    opacity: 1;
+}
+
+.hms-forgot-link {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.hms-forgot-link a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.hms-forgot-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.hms-submit-btn {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hms-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.hms-submit-btn:active {
+    transform: translateY(0);
+}
+
+.hms-signup-section {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.hms-signup-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.hms-signup-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .hms-login-card {
+        padding: 30px 20px;
+    }
+    
+    .hms-brand-title {
+        font-size: 24px;
+    }
+    
+    .hms-login-header {
+        font-size: 20px;
+    }
+    
+    .hms-brand-icon {
+        font-size: 36px;
+    }
+}

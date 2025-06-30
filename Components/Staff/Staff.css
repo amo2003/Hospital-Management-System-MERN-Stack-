@@ -1,0 +1,294 @@
+/* Staff.css */
+.user-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.user-display-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #147aff;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.user-field {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.update-button {
+  background-color: #00c161;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #00a851;
+}
+
+.update-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d93636;
+}
+/* Staff.css - combined for Staff component & Staffs page */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Container for whole staff list page */
+.users-page {
+  padding: 30px 15px;
+  min-height: 100vh;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.users-container {
+  max-width: 960px;
+  width: 100%;
+}
+
+/* Title and search area */
+.users-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.users-title h1 {
+  font-weight: 700;
+  color: #003882;
+  margin-bottom: 20px;
+}
+
+/* Search input */
+.search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 1.8px solid #ccc;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #147aff;
+}
+
+/* Search button */
+.search-button {
+  padding: 10px 22px;
+  background-color: #147aff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0f63d6;
+}
+
+/* No results message */
+.no-results {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #999;
+}
+
+/* Staff list wrapper */
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* Staff card */
+.user-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px 30px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 12px 25px rgba(20, 122, 255, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(20, 122, 255, 0.25);
+}
+
+.user-display-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #075bc9;
+  text-align: center;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 8px;
+}
+
+.user-field {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin: 12px 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Buttons container */
+.user-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* Update button */
+.update-button {
+  background-color: #008542;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #009a45;
+}
+
+.update-button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #ff0000;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d93636;
+}
+
+/* Download and WhatsApp buttons on Staffs page */
+.download-button,
+.whatsapp-button {
+  margin: 25px 10px 0;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: white;
+  display: inline-block;
+  background-color: #006cf9;
+}
+
+.download-button:hover,
+.whatsapp-button:hover {
+  background-color: #0f63d6;
+}
+
+.whatsapp-button {
+  background-color: #008732; /* WhatsApp green */
+  margin-left: 15px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .search-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .users-list {
+    justify-content: center;
+  }
+
+  .user-card {
+    max-width: 90vw;
+  }
+}

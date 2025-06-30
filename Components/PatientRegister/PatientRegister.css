@@ -1,0 +1,156 @@
+/* Main Wrapper for Patient Register Page */
+.register-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #eaf6fb, #ffffff);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Unique Navbar */
+.edit-navbar {
+  background: linear-gradient(to right, #0077cc, #005b75);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-icon {
+  font-size: 28px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.85;
+}
+
+/* Centered Card Style Form Container */
+.register-form-container {
+  width: 100%;
+  max-width: 450px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.register-form-container h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1e3a5f;
+  position: relative;
+}
+
+.register-form-container h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  margin: 10px auto 0;
+}
+
+/* Form Field Styles */
+.register-form-container label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #2d3748;
+}
+
+.register-form-container input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccd6e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f8fbfd;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.register-form-container input:focus {
+  border-color: #3498db;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.15);
+}
+
+/* Submit Button Style */
+.register-form-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.register-form-container button[type="submit"]:hover {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  transform: translateY(-1px);
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .register-form-container {
+    padding: 30px 20px;
+    margin: 40px 15px;
+  }
+
+  .edit-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,315 @@
+/* Home.css */
+.uniq-home-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.uniq-home-container .hero-section {
+  position: relative;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0c4a6e, #0369a1);
+  color: #ffffff;
+  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.uniq-home-container .hero-content h2 {
+  color: #e0f2fe;
+}
+
+.uniq-home-container .hero-content p {
+  color: #bae6fd;
+}
+
+/* Update the floating circles to match blue theme */
+.uniq-home-container .circle {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Update service cards to use blue variants */
+
+
+.uniq-home-container .hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.uniq-home-container .hero-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.uniq-home-container .hero-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #ccfbf1;
+}
+
+.uniq-home-container .hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #e0f2fe;
+}
+
+.uniq-home-container .hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Updated Appointment Button */
+.uniq-home-container .appointment-btn {
+ background-color: #0ea5e9;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.uniq-home-container .appointment-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #0284c7;
+}
+
+.uniq-home-container .channelling-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.uniq-home-container .channelling-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Animated Circles Background */
+.uniq-home-container .hero-circles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.uniq-home-container .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.uniq-home-container .circle-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -100px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.uniq-home-container .circle-2 {
+  width: 450px;
+  height: 450px;
+  bottom: -150px;
+  right: 100px;
+  animation: float 12s ease-in-out infinite 2s;
+}
+
+.uniq-home-container .circle-3 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  right: 200px;
+  animation: float 10s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
+
+/* Services Section */
+.uniq-home-container .services-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+}
+
+.uniq-home-container .services-section h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.uniq-home-container .services-section .pa {
+  color: #64748b;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.uniq-home-container .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.uniq-home-container .service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.uniq-home-container .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.uniq-home-container .service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Department-specific icons and colors */
+.uniq-home-container .emergency {
+  background-color: #ffedd5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ea580c'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9V8h2v9zm4 0h-2V8h2v9z'/%3E%3C/svg%3E");
+}
+
+.uniq-home-container .pediatric {
+  background-color: #ecfdf5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'%3E%3Cpath d='M13 2v8h8c0-4.42-3.58-8-8-8zm-2 0c-4.42 0-8 3.58-8 8h8V2zm1 9H4v9c0 1.1.9 2 2 2h6v-7h2v7h6c1.1 0 2-.9 2-2v-9H12z'/%3E%3C/svg%3E");
+}
+
+.uniq-home-container .physician {
+  background-color: #eff6ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231d4ed8'%3E%3Cpath d='M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm4 12h-2v2c0 .55-.45 1-1 1s-1-.45-1-1v-2H9v-2h2v-2c0-.55.45-1 1-1s1 .45 1 1v2h2v2z'/%3E%3C/svg%3E");
+}
+
+.uniq-home-container .neurology {
+  background-color: #f5f3ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237e22ce'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/%3E%3C/svg%3E");
+}
+
+.uniq-home-container .cardiology {
+  background-color: #fef2f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23dc2626'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+}
+
+.uniq-home-container .service-card h3 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.uniq-home-container .service-card p {
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .uniq-home-container .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .uniq-home-container .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  
+  .uniq-home-container .hero-circles {
+    display: none;
+  }
+  
+  .uniq-home-container .hero-section {
+    text-align: center;
+  }
+  
+  .uniq-home-container .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .uniq-home-container .hero-buttons {
+    justify-content: center;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .uniq-home-container .hero-section {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+  
+  .uniq-home-container .services-section {
+    padding: 3rem 1rem;
+  }
+  
+  .uniq-home-container .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .uniq-home-container .appointment-btn,
+  .uniq-home-container .channelling-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  
+}

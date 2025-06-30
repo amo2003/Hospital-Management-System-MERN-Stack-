@@ -1,0 +1,70 @@
+/* Container */
+.updateuser-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background: linear-gradient(to right, #1b5883, #366bff);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(33, 150, 243, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.updateuser-title {
+  text-align: center;
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(21, 101, 192, 0.2);
+}
+
+/* Form Layout */
+.updateuser-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Labels */
+.updateuser-form label {
+  font-weight: 600;
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+.updateuser-form input {
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f5faff;
+}
+
+.updateuser-form input:focus {
+  border-color: #1565c0;
+  box-shadow: 0 0 8px rgba(21, 101, 192, 0.25);
+}
+
+/* Submit Button */
+.updateuser-form button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #003a74;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.updateuser-form button:hover {
+  background-color: #0d47a1;
+  transform: translateY(-1px);
+}

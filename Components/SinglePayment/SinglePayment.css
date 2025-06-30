@@ -1,0 +1,157 @@
+/* SinglePayment.css */
+
+/* Modern Container with Glass Morphism */
+.single-payment-container {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: rgba(109, 184, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header with Gradient Text */
+.single-payment-header {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #000930, #3a0ca3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Payment Detail Cards with Hover Effect */
+.payment-detail {
+  margin: 1.2rem 0;
+  padding: 1.2rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-left: 4px solid #4361ee;
+}
+
+.payment-detail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.payment-detail strong {
+  color: #3a0ca3;
+  margin-right: 1rem;
+  min-width: 140px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Button Styles */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #040073, #00254e);
+  color: white;
+  box-shadow: 0 4px 15px rgba(76, 201, 240, 0.3);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #81003a, #7c000c);
+  color: white;
+  box-shadow: 0 4px 15px rgba(247, 37, 133, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+/* Loading Animation */
+.loading-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #6c757d;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.loading-text:after {
+  content: "...";
+  position: absolute;
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: "."; }
+  40% { content: ".."; }
+  60%, 100% { content: "..."; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .single-payment-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .single-payment-header {
+    font-size: 1.8rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .payment-detail {
+    padding: 1rem;
+  }
+  
+  .payment-detail strong {
+    min-width: 100px;
+  }
+}

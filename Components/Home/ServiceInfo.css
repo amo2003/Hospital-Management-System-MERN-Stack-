@@ -1,0 +1,156 @@
+.service-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
+  background-color: #ffffff;
+}
+
+.service-banner {
+  text-align: center;
+  background: #ffe5e5;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  color: #c0392b;
+}
+
+.service-banner h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.service-banner p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.service-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-description {
+  flex: 1;
+  min-width: 280px;
+}
+
+.service-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.service-description ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery-section {
+  margin: 3rem 0;
+}
+
+.gallery-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  background-color: #fdf2f2;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.05);
+}
+
+.call-to-action h3 {
+  font-size: 1.6rem;
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.home-btn {
+  margin-top: 1rem;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+}
+
+.call-to-action .cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* adds vertical spacing between buttons */
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+
+.home-btn:hover {
+  background-color: #e2e8f0;
+}
+
+
+.emergency-contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #c0392b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-contact-button:hover {
+  background-color: #a93226;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

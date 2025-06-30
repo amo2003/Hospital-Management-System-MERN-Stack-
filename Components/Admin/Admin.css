@@ -1,0 +1,138 @@
+.admin-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Unique Top Navbar */
+.register-navbar {
+  width: 100%;
+  background: linear-gradient(to right, #0063aa, #005b75);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.navbar-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Card Container */
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 960px;
+  width: 100%;
+}
+
+/* Each Card */
+.admin-card {
+  background-color: white;
+  border: 2px solid #0077ff;
+  border-radius: 16px;
+  padding: 25px;
+  flex: 0 0 calc(25% - 25px); /* 4 per row */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.2);
+  min-width: 200px;
+}
+
+.admin-card:hover {
+  background-color: #e6f3ff;
+  transform: scale(1.05);
+}
+
+.card-icon {
+  font-size: 40px;
+  color: #0077cc;
+  margin-bottom: 12px;
+}
+
+.card-icon.whatsapp {
+  color: #25d366;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .admin-card {
+    flex: 0 0 calc(33.33% - 25px);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-card {
+    flex: 0 0 calc(50% - 25px);
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-card {
+    flex: 0 0 100%;
+  }
+}
+
+/* Footer */
+.admin-footer {
+  background: #c3e5fa;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: auto;
+  width: 100%;
+  border-top: 2px solid #004ba0;
+}
+
+.admin-footer h3 {
+  font-size: 1.6rem;
+  font-weight: 850;
+  margin: 10px 0;
+  color: #003052;
+}
+
+.admin-footer p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  color: #333;
+}

@@ -1,0 +1,162 @@
+/* Container */
+.patient-display-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafe;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.custom-patient-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.85;
+}
+
+/* Table wrapper */
+.patient-table-wrapper {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Search input */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #0066cc;
+}
+
+.search-input {
+  width: 300px;
+  max-width: 90%;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+/* Table */
+.styled-patient-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.styled-patient-table th,
+.styled-patient-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-patient-table th {
+  background-color: #0066cc;
+  color: white;
+  font-weight: 600;
+}
+
+.styled-patient-table td {
+  color: #333;
+}
+
+.styled-patient-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons */
+.delete-btn,
+.edit-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.edit-btn {
+  background-color: #1f45fe;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0033ff;
+}
+
+/* Empty state */
+.empty-state {
+  color: #777;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
